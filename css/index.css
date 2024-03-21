@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav {
+    background-color: transparent;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav img {
+    height: 100%;
+    width: auto;
+    margin: 0 1rem;
+}
+
+.btn-gps {
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.nav-1 {
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6255A5;
+}
+
+.nav-2 {
+    padding-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
