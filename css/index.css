@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --bg: #C0DFE1;
+    --primary: #17A9C9;
+}
+
 body {
-    background-color: #fff;
+    background-color: var(--bg);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -14,7 +19,7 @@ a {
 }
 
 nav {
-    background-color: white;
+    background-color: var(--bg);
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -42,7 +47,7 @@ nav img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #6255A5;
+    color: var(--primary);
 }
 
 .nav-2 {
@@ -54,11 +59,11 @@ nav img {
 }
 
 .highlight {
-    color: #6255A5;
+    color: var(--primary);
 }
 
 #home {
-    padding: 5rem 0;
+    padding: 6.5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,14 +80,14 @@ nav img {
 }
 
 .home-1 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     margin: 0;
 }
 
 .home-1 p {
     color: #827A7A;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -90,16 +95,256 @@ nav img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 43%;
+    width: 40%;
 }
 
 .btn {
-    background-color: #6255A5;
+    background-color: var(--primary);
     color: white;
     padding: 1rem 2rem;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-weight: 700;
+    width: 8rem;
+}
+
+.home-down {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem 4rem;
+    border-top: #827A7A 1px solid;
+    border-bottom: #827A7A 1px solid;
+}
+
+#benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 6.5rem;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.benefit h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-right: 5rem;
+    margin: 0;
+    width: 90%;
+}
+
+.benefit h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.benefit p {
+    color: #827A7A;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 80%;
+}
+
+.points {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.point {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.point img {
+    width: 55px;
+    margin-right: 2rem;
+    overflow: auto;
+}
+
+#courses {
+    margin: 2rem;
+}
+
+.course-title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.course-title p {
+    color: #827A7A;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 5rem;
+    padding: 0 7rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 0;
+    margin: 1.5rem;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #4E596B;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-text {
+    padding: 1rem 2rem;
+}
+
+.card-text h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #324361;
+}
+
+.card-text p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.inner-card-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-1 h1,
+    .nav-2 a,
+    .btn-gps {
+        display: none;
+    }
+
+    .nav-2 {
+        width: fit-content;
+    }
+
+    #home {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .home-1 {
+        padding: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .home-1 h1 {
+        padding: 1.5rem;
+        font-size: 2.6rem;
+    }
+
+    .home-1 p {
+        padding: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .home-2 {
+        position: absolute;
+        opacity: 0.0;
+        z-index: -1;
+    }
+
+    .home-2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cta-group {
+        width: 80%;
+    }
+
+    .home-down {
+        flex-wrap: wrap;
+    }
+
+    #benefits {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .benefits-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .benefit {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .benefit h1 {
+        padding: 0;
+        font-size: 2.4rem;
+    }
+
+    .point img {
+        width: 50%;
+        height: auto;
+        margin-right: 1rem;
+    }
+
+    .point p {
+        text-align: justify;
+        width: 95%;
+    }
+
+    .cards {
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .card-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .card-text p {
+        font-size: 0.8rem;
+    }
 }
