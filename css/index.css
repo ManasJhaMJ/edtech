@@ -91,6 +91,12 @@ nav img {
     font-weight: 500;
 }
 
+.bulb {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
 .cta-group {
     display: flex;
     justify-content: space-between;
@@ -304,12 +310,13 @@ nav img {
 }
 
 .newsletter {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 4rem 6rem;
-    width: 70%;
+    padding: 8rem 6rem;
+    width: 60%;
     color: white;
     background-color: var(--primary);
     border-radius: 0 20px 0 20px;
@@ -321,8 +328,34 @@ nav img {
     margin: 0;
 }
 
-.btn-subs {
-    background-color: #324361;
+.newsletter-form button {
+    background-color: #0E7A92;
+    border-radius: 0 10px 10px 0;
+    margin: 0;
+}
+
+.newsletter-form input {
+    padding: 1rem;
+    border: none;
+    margin: 0;
+    border-radius: 10px 0 0 10px;
+    margin-right: -1rem;
+}
+
+.newsletter-form input:active {
+    border: none;
+}
+
+.newsletter-polygon1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.newsletter-polygon2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -349,18 +382,19 @@ nav img {
     }
 
     .home-1 h1 {
-        padding: 1.5rem;
+        padding: 0.5rem 1.5rem;
         font-size: 2.6rem;
+        text-align: center;
     }
 
     .home-1 p {
-        padding: 1.5rem;
+        padding: 0 1.5rem;
         font-size: 1.2rem;
     }
 
     .home-2 {
         position: absolute;
-        opacity: 0.0;
+        opacity: 0.3;
         z-index: -1;
     }
 
@@ -435,7 +469,37 @@ nav img {
     }
 
     .review-card {
-        width: 80%;
+        width: 100%;
         flex-direction: column;
+        margin: 2rem 0;
+    }
+
+    .review-card p {
+        text-align: justify;
+    }
+
+    .newsletter {
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+
+    .newsletter h1 {
+        font-size: 2.4rem;
+    }
+
+    .newsletter-form input {
+        width: 85%;
+        border-radius: 10px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .newsletter-form button {
+        border-radius: 10px;
+    }
+
+    .newsletter-polygon1,
+    .newsletter-polygon2 {
+        height: 15%;
     }
 }
