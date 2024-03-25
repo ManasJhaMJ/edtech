@@ -101,7 +101,7 @@ nav img {
 .btn {
     background-color: var(--primary);
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem 1.2rem;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -178,6 +178,7 @@ nav img {
 
 #courses {
     margin: 2rem;
+    text-align: center;
 }
 
 .course-title h1 {
@@ -210,6 +211,7 @@ nav img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: left;
     width: 30%;
     padding: 0;
     margin: 1.5rem;
@@ -245,6 +247,82 @@ nav img {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+#reviews {
+    text-align: center;
+    padding: 2rem;
+}
+
+.reviews-title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0 2rem;
+    margin: 0;
+}
+
+.reviews-title p {
+    color: #827A7A;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0 2rem;
+}
+
+.review-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 40%;
+    height: fit-content;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4E596B;
+    padding-right: 1rem;
+    text-align: justify;
+}
+
+.review-card img {
+    height: 100%;
+    width: 100%;
+    margin: 1rem 1.5rem;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 6rem;
+    width: 70%;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 0 20px 0 20px;
+}
+
+.newsletter h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.btn-subs {
+    background-color: #324361;
 }
 
 @media screen and (max-width: 768px) {
@@ -346,5 +424,18 @@ nav img {
 
     .card-text p {
         font-size: 0.8rem;
+    }
+
+    .reviews-title h1 {
+        font-size: 2.4rem;
+    }
+
+    .reviews-title p {
+        font-size: 1rem;
+    }
+
+    .review-card {
+        width: 80%;
+        flex-direction: column;
     }
 }
