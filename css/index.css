@@ -381,6 +381,48 @@ nav img {
     right: 0;
 }
 
+footer {
+    margin-top: 5rem;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.socials {
+    margin: 0.5rem 0.5rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0.5rem;
+    color: #827A7A;
+}
+
+hr {
+    width: 50%;
+    border: 1px solid #827A7A;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #827A7A;
+}
+
 @media screen and (max-width: 768px) {
 
     nav {
@@ -417,16 +459,16 @@ nav img {
 
     .home-1 h1 {
         padding: 0.5rem 1.5rem;
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         text-align: center;
         width: fit-content;
     }
 
     .home-1 p {
         padding: 0 1.5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         width: fit-content;
-        color: #646060;
+        color: #4b4545;
     }
 
     .polygon {
@@ -475,7 +517,7 @@ nav img {
 
     .benefit h1 {
         padding: 0;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 
     .point img {
@@ -485,6 +527,7 @@ nav img {
     }
 
     .point p {
+        font-size: 1rem;
         text-align: justify;
         width: 95%;
     }
@@ -499,16 +542,24 @@ nav img {
         margin: 1rem 0;
     }
 
+    .course-title h1 {
+        font-size: 2.4rem;
+    }
+
+    .course-title p {
+        font-size: 1rem;
+    }
+
     .card-text h1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .card-text p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
     .reviews-title h1 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 
     .reviews-title p {
@@ -521,7 +572,13 @@ nav img {
         margin: 2rem 0;
     }
 
+    .review-card img {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
     .review-card p {
+        font-size: 1rem;
         text-align: justify;
     }
 
@@ -531,7 +588,11 @@ nav img {
     }
 
     .newsletter h1 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
+    }
+
+    .newsletter p {
+        font-size: 1rem;
     }
 
     .newsletter-form input {
@@ -548,5 +609,20 @@ nav img {
     .newsletter-polygon1,
     .newsletter-polygon2 {
         height: 15%;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer h1 {
+        font-size: 1.5rem;
     }
 }
