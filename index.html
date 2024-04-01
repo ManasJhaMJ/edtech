@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edtech Platform</title>
     <link rel="stylesheet" href="./css/index.css">
+
+    <script src="./assets/scripts/scroll-entrance-master/src/scroll-entrance.js"></script>
 </head>
+
+<style>
+    /* Ensure elements are hidden while ScrollEntrance is loading */
+    .js [data-entrance] {
+        visibility: hidden;
+    }
+</style>
 
 <body>
     <nav>
@@ -26,9 +35,12 @@
 
     <section id="home">
         <div class="home-1">
-            <div class="bulb"><img src="./assets/bulb.png" alt="bulb"></div>
-            <h1>Good <span class="highlight">coaching</span> is good teaching & nothing else.</h1>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+            <div data-entrance="from-bottom" class="bulb"><img src="./assets/bulb.png" alt="bulb"></div>
+            <h1 data-entrance="from-bottom">Good <span class="highlight">coaching</span> is good teaching & nothing
+                else.</h1>
+            <p data-entrance="from-bottom">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                roots in a
+                piece of classical
                 Latin literature from 45 BC,</p>
             <div class="cta-group">
                 <button class="btn">See More</button>
@@ -42,19 +54,19 @@
     </section>
 
     <div class="home-down">
-        <img src="./assets/home-cards/1.png" alt="offerings">
-        <img src="./assets/home-cards/2.png" alt="offerings">
-        <img src="./assets/home-cards/3.png" alt="offerings">
-        <img src="./assets/home-cards/4.png" alt="offerings">
-        <img src="./assets/home-cards/5.png" alt="offerings">
-        <img src="./assets/home-cards/6.png" alt="offerings">
+        <img data-entrance="from-left" src="./assets/home-cards/1.png" alt="offerings">
+        <img data-entrance="from-left" src="./assets/home-cards/2.png" alt="offerings">
+        <img data-entrance="from-left" src="./assets/home-cards/3.png" alt="offerings">
+        <img data-entrance="from-left" src="./assets/home-cards/4.png" alt="offerings">
+        <img data-entrance="from-left" src="./assets/home-cards/5.png" alt="offerings">
+        <img data-entrance="from-left" src="./assets/home-cards/6.png" alt="offerings">
     </div>
 
     <section id="benefits">
         <div class="benefit">
-            <img class="benefits-img" src="./assets/vectors/benefits.svg" alt="benefits">
+            <img data-entrance="from-bottom" class="benefits-img" src="./assets/vectors/benefits.svg" alt="benefits">
         </div>
-        <div class="benefit">
+        <div data-entrance="from-bottom" class="benefit">
             <h1>Benefit from our online Learning Expert</h1>
             <div class="points">
                 <div class="point">
