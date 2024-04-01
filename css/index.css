@@ -427,6 +427,69 @@ hr {
     color: #827A7A;
 }
 
+/* The sidepanel menu */
+.sidepanel {
+    height: 100vh;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.9);
+    backdrop-filter: blur(15px);
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #c5c5c5;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    margin-right: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.openbtn:hover {
+    background-color: var(--secondary);
+}
+
 /* Media Queries */
 @media screen and (max-width: 1024px) {
     .nav-2 a {
@@ -752,5 +815,10 @@ hr {
 
     .footer h1 {
         font-size: 1.5rem;
+    }
+
+    .gps {
+        display: block;
+        width: 60%;
     }
 }
