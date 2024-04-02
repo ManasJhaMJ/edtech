@@ -495,7 +495,7 @@ hr {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .nav-2 a {
         margin: 0 0.3rem;
     }
@@ -617,7 +617,7 @@ hr {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
 
     nav {
         padding: 0.5rem 0;
@@ -823,7 +823,6 @@ hr {
 
     .gps {
         display: block;
-        width: 60%;
     }
 
     .openbtn {
