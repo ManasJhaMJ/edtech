@@ -12,5 +12,4 @@ function closeNav() {
 var typed = new Typed('#typed', {
     strings: ['', 'Good <span class="highlight">coaching</span> is good teaching &amp; nothing else.'],
     typeSpeed: 50,
-    smartBackspace: true,
 });
