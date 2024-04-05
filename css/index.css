@@ -151,9 +151,13 @@ nav img {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 2rem 4rem;
+    margin: 2rem;
     border-top: #827A7A 1px solid;
     border-bottom: #827A7A 1px solid;
+}
+
+.home-down img {
+    width: 16%;
 }
 
 #benefits {
@@ -504,8 +508,21 @@ hr {
 
 /* Media Queries */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-1 {
+        padding-left: 1rem;
+    }
+
+    .nav-1 h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav-2 {
+        padding-right: 1rem;
+    }
+
     .nav-2 a {
         margin: 0 0.3rem;
+        font-size: 13px;
     }
 
     #home {
@@ -680,6 +697,10 @@ hr {
 
     .home-down {
         flex-wrap: wrap;
+    }
+
+    .home-down img {
+        width: auto;
     }
 
     #benefits {
