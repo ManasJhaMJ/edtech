@@ -743,6 +743,7 @@ hr {
     .card {
         width: 100%;
         margin: 1rem 0;
+        flex-basis: 40%;
     }
 
     .course-title h1 {
@@ -770,7 +771,7 @@ hr {
     }
 
     .review-card {
-        width: 100%;
+        flex-basis: 100%;
         flex-direction: column;
         margin: 2rem 0;
     }
@@ -778,6 +779,7 @@ hr {
     .review-card img {
         margin: 0;
         margin-bottom: 1rem;
+        width: 90%;
     }
 
     .review-card p {
@@ -835,5 +837,15 @@ hr {
 
     .openbtn {
         display: block;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .card {
+        flex-basis: 100%;
+    }
+
+    .home-down img {
+        width: 80%;
     }
 }

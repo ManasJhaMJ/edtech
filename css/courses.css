@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg: #C0DFE1;
+    --primary: #17A9C9;
+    --secondary: #0E7A92;
+}
+
+body {
+    background-color: var(--bg);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav img {
+    height: 100%;
+    width: auto;
+    margin: 0 1rem;
+}
+
+.btn-gps {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.nav-1 {
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary);
+}
+
+.nav-2 {
+    padding-right: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+}
+
+.nav-2 a {
+    margin: 0 1rem;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 100vh;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.9);
+    backdrop-filter: blur(15px);
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #c5c5c5;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    margin-right: 1rem;
+    padding: 10px 15px;
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+}
+
+.openbtn:hover {
+    background-color: var(--secondary);
+}
+
+.openbtn {
+    display: none;
+}
+
+footer {
+    margin-top: 5rem;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.socials {
+    margin: 0.5rem 0.5rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0.5rem;
+    color: #827A7A;
+}
+
+hr {
+    width: 50%;
+    border: 1px solid #827A7A;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #827A7A;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-1 {
+        padding-left: 1rem;
+    }
+
+    .nav-1 h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav-2 {
+        padding-right: 1rem;
+    }
+
+    .nav-2 a {
+        margin: 0 0.3rem;
+        font-size: 13px;
+    }
+
+    .btn-gps {
+        width: 30%;
+    }
+
+    .btn-gps img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+
+    nav {
+        padding: 0.5rem 0;
+    }
+
+    .nav-1 {
+        padding-left: 0.3rem;
+    }
+
+
+    .nav-1 h1,
+    .nav-2 a,
+    .btn-gps {
+        display: none;
+    }
+
+    .nav-2 {
+        width: fit-content;
+    }
+
+    .gps {
+        display: block;
+    }
+
+    .openbtn {
+        display: block;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer h1 {
+        font-size: 1.5rem;
+    }
+}
