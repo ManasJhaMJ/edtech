@@ -1,3 +1,13 @@
+// Change navbar properties on scroll
+var navbar = document.querySelector('nav')
+window.onscroll = function () {
+    if (window.scrollY > 300) {
+        navbar.classList.add('scrolled')
+    } else {
+        navbar.classList.remove('scrolled')
+    }
+}
+
 /* Set the width of the sidebar to 250px (show it) */
 function openNav() {
     document.getElementById("mySidepanel").style.width = "90%";
