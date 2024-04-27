@@ -27,7 +27,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 0.3rem 1rem;
     transition: linear 0.5s background-color;
 }
 
@@ -272,10 +272,11 @@ nav.scrolled a:hover {
     flex-basis: 30%;
     padding: 0;
     margin: 1.5rem 0;
-    border-radius: 20px;
+    border-radius: 24px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #4E596B;
+    border: 1px solid #e5ab09;
 }
 
 .card img {
@@ -539,6 +540,11 @@ hr {
         font-size: 1.2rem;
     }
 
+    .nav-1 img {
+        height: 60px;
+        width: auto;
+    }
+
     .nav-2 {
         padding-right: 1rem;
     }
@@ -662,6 +668,11 @@ hr {
     .nav-2 a,
     .btn-gps {
         display: none;
+    }
+
+    .nav-1 img {
+        height: 60px;
+        width: auto;
     }
 
     .nav-2 {
