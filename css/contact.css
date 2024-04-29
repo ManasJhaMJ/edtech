@@ -164,8 +164,9 @@ nav.scrolled a:hover {
 .contact-text {
     flex-basis: 40%;
     text-align: center;
-    background-color: #000;
-    color: var(--bg);
+    background-color: #6d3e0f;
+    color: #fff;
+    border: 12px solid #e4ab09;
     border-radius: 20px;
     padding: 2rem;
     margin: 3rem 0;
@@ -216,8 +217,8 @@ nav.scrolled a:hover {
 }
 
 #contact form button {
-    background-color: #000;
-    color: var(--bg);
+    background-color: #ffbc00;
+    color: #000;
     border: none;
     padding: 1rem 2rem;
     font-size: 1.1rem;
@@ -227,8 +228,8 @@ nav.scrolled a:hover {
 }
 
 #contact form button:hover {
-    background-color: var(--bg);
-    color: #000;
+    background-color: #000;
+    color: #fff;
 }
 
 
