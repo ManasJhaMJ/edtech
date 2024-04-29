@@ -152,43 +152,85 @@ nav.scrolled a:hover {
     display: none;
 }
 
-footer {
-    margin-top: 5rem;
-    padding: 2rem 4rem;
+#contact {
+    padding: 1rem 2rem;
+    height: 90vh;
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    width: fit-content;
 }
 
-.footer-container:first-of-type img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.contact-text {
+    flex-basis: 40%;
+    text-align: center;
+    background-color: #000;
+    color: var(--bg);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 3rem 0;
+    position: relative;
 }
 
-.socials {
-    margin: 0.5rem 0.5rem;
+.contact-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 2rem 0;
+
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-footer p {
+.contact-text p {
     font-size: 1.2rem;
-    margin: 0.5rem 0.5rem;
-    color: #827A7A;
+    font-weight: 400;
+    padding-bottom: 2rem;
 }
+
+#contact img {
+    position: absolute;
+    bottom: -10%;
+    right: -5%;
+    width: 20%;
+    height: auto;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 40%;
+}
+
+#contact form h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background-color: #000;
+    color: var(--bg);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact form button:hover {
+    background-color: var(--bg);
+    color: #000;
+}
+
 
 hr {
     width: 50%;
@@ -269,18 +311,37 @@ hr {
         display: block;
     }
 
-    footer {
-        flex-direction: column;
+    #contact {
+        padding: 5rem 2rem;
+        height: auto;
+    }
+
+    .contact-text {
+        flex-basis: 90%;
         padding: 1rem;
     }
 
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+    .contact-text p {
+        font-size: 1rem;
     }
 
-    .footer h1 {
-        font-size: 1.5rem;
+    #contact img {
+        width: 30%;
     }
+
+    #contact form {
+        flex-basis: 90%;
+        align-items: center;
+    }
+
+    #contact form h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        width: 90%;
+    }
+
 }
