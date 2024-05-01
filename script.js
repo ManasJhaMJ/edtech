@@ -1,7 +1,7 @@
 // Change navbar properties on scroll
 var navbar = document.querySelector('nav')
 window.onscroll = function () {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 200) {
         navbar.classList.add('scrolled')
     } else {
         navbar.classList.remove('scrolled')
