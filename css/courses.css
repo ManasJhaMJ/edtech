@@ -152,6 +152,92 @@ nav.scrolled a:hover {
     display: none;
 }
 
+#courses {
+    margin: 7rem 2rem;
+    text-align: center;
+}
+
+.course-title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.course-title p {
+    color: #827A7A;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-basis: 30%;
+    padding: 0;
+    margin: 1.5rem 0;
+    border-radius: 24px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #4E596B;
+    border: 1px solid #e5ab09;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-text {
+    padding: 1rem 2rem;
+}
+
+.card-text h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #324361;
+}
+
+.card-text p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.inner-card-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 1rem;
+    font-weight: 700;
+    width: 8rem;
+}
+
 footer {
     margin-top: 5rem;
     padding: 2rem 4rem;
@@ -269,6 +355,33 @@ hr {
         display: block;
     }
 
+    .cards {
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        margin: 1rem 0;
+        flex-basis: 40%;
+    }
+
+    .course-title h1 {
+        font-size: 2.4rem;
+    }
+
+    .course-title p {
+        font-size: 1rem;
+    }
+
+    .card-text h1 {
+        font-size: 1.1rem;
+    }
+
+    .card-text p {
+        font-size: 0.75rem;
+    }
+
     footer {
         flex-direction: column;
         padding: 1rem;
@@ -282,5 +395,15 @@ hr {
 
     .footer h1 {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .card {
+        flex-basis: 100%;
+    }
+
+    .home-down img {
+        width: 80%;
     }
 }
