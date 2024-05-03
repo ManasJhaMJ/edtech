@@ -7,7 +7,7 @@
     <title>About Shashtra</title>
     <link rel="stylesheet" href="../css/about.css">
 
-    <script src="./assets/scripts/scroll-entrance-master/src/scroll-entrance.js"></script>
+    <script src="../assets/scripts/scroll-entrance-master/src/scroll-entrance.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
 </head>
@@ -29,19 +29,19 @@
         </div>
         <div class="nav-2">
             <a href="../index.html">Home</a>
-            <a href="">About Us</a>
+            <a href="../pages/about.html">About Us</a>
             <a href="">More</a>
-            <a href="">Courses</a>
-            <a href="">Contact Us</a>
+            <a href="../pages/courses.html">Courses</a>
+            <a href="../pages/contact.html">Contact Us</a>
             <button class="btn-gps"><img src="../assets/gps.png" alt="Google Play Store"></button>
         </div>
         <div id="mySidepanel" class="sidepanel">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="">Home</a>
-            <a href="">About Us</a>
+            <a href="../index.html">Home</a>
+            <a href="../pages/about.html">About Us</a>
             <a href="">More</a>
-            <a href="">Courses</a>
-            <a href="">Contact Us</a>
+            <a href="../pages/courses.html">Courses</a>
+            <a href="../pages/contact.html">Contact Us</a>
             <button class="btn-gps gps"><img src="../assets/gps.png" alt="Google Play Store"></button>
         </div>
 
@@ -52,12 +52,12 @@
 
         <div class="about-head">
             <img src="../assets/aboutbg.svg" alt="about-image">
-            <h1>WE ARE SHASHTRA</h1>
+            <h1 data-entrance="from-bottom">WE ARE <br>SHASHTRA</h1>
         </div>
 
         <div class="about-text">
-            <h1>Heading Is here</h1>
-            <p>
+            <h1 data-entrance="from-bottom">Heading Is here</h1>
+            <p data-entrance="from-left">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repudiandae deserunt necessitatibus quis
                 aspernatur veniam nobis esse! Corporis, earum. Qui officia nesciunt amet quae dignissimos aliquam
                 inventore, illum molestias aperiam?
@@ -76,28 +76,28 @@
         </div>
 
         <div class="team">
-            <div class="card">
+            <div class="card" data-entrance="from-left">
                 <img src="https://holosgen.com/clone/wp-content/uploads/2018/12/placeholder-team.jpg" alt="">
                 <div>
                     <h3>Team member 1</h3>
                     <p>Position 1</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-entrance="from-left">
                 <img src="https://holosgen.com/clone/wp-content/uploads/2018/12/placeholder-team.jpg" alt="">
                 <div>
                     <h3>Team member 2</h3>
                     <p>Position 2</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-entrance="from-left">
                 <img src="https://holosgen.com/clone/wp-content/uploads/2018/12/placeholder-team.jpg" alt="">
                 <div>
                     <h3>Team member 3</h3>
                     <p>Position 3</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-entrance="from-left">
                 <img src="https://holosgen.com/clone/wp-content/uploads/2018/12/placeholder-team.jpg" alt="">
                 <div>
                     <h3>Team member 4</h3>
@@ -107,8 +107,8 @@
         </div>
 
         <div class="about-text">
-            <h1>Heading Is here</h1>
-            <p>
+            <h1 data-entrance="from-bottom">Heading Is here</h1>
+            <p data-entrance="from-left">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repudiandae deserunt necessitatibus quis
                 aspernatur veniam nobis esse! Corporis, earum. Qui officia nesciunt amet quae dignissimos aliquam
                 inventore, illum molestias aperiam?
@@ -127,16 +127,16 @@
         </div>
 
         <div class="about-imgs">
-            <img src="../assets/about1.png" alt="company images">
-            <img src="../assets/about2.png" alt="company images">
-            <img src="../assets/about3.png" alt="company images">
-            <img src="../assets/about4.png" alt="company images">
+            <img data-entrance="from-left" src="../assets/about1.png" alt="company images">
+            <img data-entrance="from-left" src="../assets/about2.png" alt="company images">
+            <img data-entrance="from-left" src="../assets/about3.png" alt="company images">
+            <img data-entrance="from-left" src="../assets/about4.png" alt="company images">
         </div>
 
     </section>
 
     <footer>
-        <div class="footer">
+        <div class="footer" data-entrance="fade">
             <div class="footer-container">
                 <img class="socials" src="../assets/logo.png" alt="logo">
                 <h1 class="socials highlight">SHASHTRA</h1>
@@ -149,7 +149,7 @@
             </div>
             <button class="btn-gps gps"><img src="../assets/gps.png" alt="google Play"></button>
         </div>
-        <div class="footer">
+        <div class="footer" data-entrance="fade">
             <h1>Contact Us</h1>
             <p>Bhopal, IN</p>
             <p>+91 4532500342</p>
