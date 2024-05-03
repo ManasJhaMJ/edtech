@@ -154,7 +154,10 @@ nav.scrolled a:hover {
 
 .about-head {
     height: 100%;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .about-head img {
@@ -165,9 +168,6 @@ nav.scrolled a:hover {
 
 .about-head h1 {
     position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     color: #000;
     font-family: 'Rowdies', sans-serif;
