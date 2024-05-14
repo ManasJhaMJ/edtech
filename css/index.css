@@ -6,6 +6,10 @@
     --secondary: #ab8007;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg);
     font-family: Arial, sans-serif;
@@ -59,6 +63,7 @@ nav.scrolled a:hover {
     justify-content: space-between;
     align-items: center;
     color: var(--primary);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav-1 img {
@@ -78,6 +83,7 @@ nav.scrolled a:hover {
 
 .nav-2 a {
     margin: 0 1rem;
+    font-weight: 500;
 }
 
 .highlight {
@@ -234,8 +240,15 @@ nav.scrolled a:hover {
 }
 
 #courses {
-    margin: 2rem;
+    margin: 2rem 0;
+    padding: 3rem 0;
     text-align: center;
+    background-color: var(--primary);
+}
+
+#courses button {
+    background-color: var(--bg);
+    color: #4E596B;
 }
 
 .course-title h1 {
@@ -335,8 +348,8 @@ nav.scrolled a:hover {
     height: fit-content;
     padding: 1rem;
     margin: 2rem 0;
-    background-color: white;
-    border: 1px solid #e5ab09;
+    background-color: var(--primary);
+    border: 1px solid var(--secondary);
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -776,7 +789,7 @@ hr {
 
     .card {
         width: 100%;
-        margin: 1rem 0;
+        margin: 1rem;
         flex-basis: 40%;
     }
 
