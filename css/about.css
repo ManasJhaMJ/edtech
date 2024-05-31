@@ -79,6 +79,7 @@ nav.scrolled a:hover {
 
 .nav-2 a {
     margin: 0 1rem;
+    font-weight: 500;
 }
 
 .highlight {
@@ -152,8 +153,17 @@ nav.scrolled a:hover {
     display: none;
 }
 
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
 .about-head {
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,23 +188,81 @@ nav.scrolled a:hover {
     padding: 5rem;
     font-size: large;
     text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text span {
+    width: 100%;
+}
+
+.carousel {
+    margin: 1rem 2rem;
+    width: 100%;
+}
+
+.carousel img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about-text p {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.full-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.full-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.full-section h1 {
+    font-size: 5rem;
+    color: #fff;
+    font-family: 'Rowdies', sans-serif;
+    z-index: 1;
+    width: 40%;
+    text-align: center;
 }
 
 .team {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     margin: 5rem 1rem;
+    width: 100%;
 }
 
 .card {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    width: 15vw;
+    padding: 1rem 2rem;
+    flex-basis: 20%;
+    margin: 3rem;
+    color: #fff;
     text-align: center;
-    border: 1px solid var(--secondary);
+    border: 5px solid var(--primary);
+}
+
+.card h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
 }
 
 .card img {
@@ -209,6 +277,7 @@ nav.scrolled a:hover {
     flex-wrap: wrap;
     margin: 2rem 0;
     margin-bottom: 10rem;
+    width: 100%;
 }
 
 .about-imgs img:nth-child(2n+1) {
@@ -219,6 +288,42 @@ nav.scrolled a:hover {
     height: 60vh;
     width: auto;
     margin: 1rem 0;
+}
+
+#internships {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+    padding: 2rem;
+}
+
+#internships img {
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+
+#internships h1 {
+    font-size: 3.6rem;
+    font-weight: 800;
+    color: #000;
+    z-index: 1;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#internships p {
+    font-size: 1.3rem;
+    color: #000;
+    z-index: 1;
+    width: 90%;
+    text-align: justify;
 }
 
 footer {
@@ -260,6 +365,7 @@ footer p {
 }
 
 hr {
+    margin: 1rem auto;
     width: 50%;
     border: 1px solid #827A7A;
 }
@@ -302,9 +408,13 @@ hr {
         width: 100%;
     }
 
+    .card {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
     .about-head h1 {
         position: absolute;
-        top: 33%;
         font-size: 8rem;
     }
 
@@ -312,8 +422,16 @@ hr {
         padding: 3rem;
     }
 
+    .about-text p {
+        font-size: 1.2rem;
+    }
+
     .about-imgs img {
         height: 50vh;
+    }
+
+    .full-section h1 {
+        font-size: 3rem;
     }
 
 }
@@ -354,7 +472,6 @@ hr {
 
     .about-head h1 {
         position: absolute;
-        top: 40%;
         font-size: 3rem;
     }
 
@@ -364,13 +481,45 @@ hr {
     }
 
     .card {
-        width: 35vw;
+        width: 90vw;
+        margin: 1rem 0;
+        padding: 1rem 0.5rem;
+    }
+
+    .card h3 {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    .carousel {
         margin: 1rem 0;
     }
 
     .about-text {
-        padding: 3rem;
+        padding: 3rem 1.4rem;
         font-size: medium;
+        flex-direction: column;
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+    }
+
+    .full-section h1 {
+        font-size: 3rem;
+        width: 80%;
+    }
+
+    #internships h1 {
+        font-size: 2.5rem;
+    }
+
+    #internships p {
+        font-size: 1.1rem;
     }
 
     footer {
