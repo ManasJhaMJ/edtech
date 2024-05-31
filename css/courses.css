@@ -79,6 +79,7 @@ nav.scrolled a:hover {
 
 .nav-2 a {
     margin: 0 1rem;
+    font-weight: 500;
 }
 
 .highlight {
