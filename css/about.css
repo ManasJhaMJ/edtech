@@ -481,7 +481,7 @@ hr {
     }
 
     .card {
-        width: 90vw;
+        flex-basis: 40vw;
         margin: 1rem 0;
         padding: 1rem 0.5rem;
     }
