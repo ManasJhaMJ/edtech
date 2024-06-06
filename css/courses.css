@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
 
 :root {
     --bg: #ffffff;
@@ -174,9 +175,20 @@ nav.scrolled a:hover {
     text-align: center;
 }
 
+.hindi {
+    font-family: 'Tiro Devanagari Hindi', sans-serif;
+}
+
+.blur img,
+.blur h1,
+.blur h2,
+.blur p {
+    filter: blur(10px);
+}
+
 .cards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin: 0;
@@ -184,6 +196,7 @@ nav.scrolled a:hover {
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,7 +205,7 @@ nav.scrolled a:hover {
     flex-basis: 30%;
     padding: 0;
     margin: 1.5rem 0;
-    border-radius: 24px;
+    border-radius: 23px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #4E596B;
@@ -202,6 +215,12 @@ nav.scrolled a:hover {
 .card img {
     width: 100%;
     height: auto;
+    transition: ease 0.5s;
+}
+
+.card:hover img {
+    transform: scale(0.95);
+
 }
 
 .card-text {
@@ -215,9 +234,33 @@ nav.scrolled a:hover {
     color: #324361;
 }
 
+.coming-soon {
+    z-index: 3;
+    position: absolute;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    color: var(--primary);
+    transform: translate(-2rem, -3rem);
+}
+
+.blur .coming-soon h3 {
+    display: block !important;
+}
+
+.card-text h3 {
+    display: none;
+}
+
+.card-text h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #324361;
+}
+
 .card-text p {
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .inner-card-text {
@@ -225,18 +268,6 @@ nav.scrolled a:hover {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-}
-
-.btn {
-    background-color: var(--primary);
-    color: white;
-    padding: 1rem;
-    border: 2px solid var(--secondary);
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 1rem;
-    font-weight: 700;
-    width: 8rem;
 }
 
 footer {
