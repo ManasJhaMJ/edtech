@@ -241,7 +241,7 @@ nav.scrolled a:hover {
     width: 100%;
     text-align: center;
     color: var(--primary);
-    transform: translate(-2rem, -3rem);
+    transform: translate(-2rem, -10rem);
 }
 
 .blur .coming-soon h3 {
