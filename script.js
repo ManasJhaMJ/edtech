@@ -20,6 +20,6 @@ function closeNav() {
 
 // typed.js
 var typed = new Typed('#typed', {
-    strings: ['', 'Good <span class="highlight">coaching</span> is good teaching &amp; nothing else.'],
+    strings: ['', 'We dont sell Courses. <br>We provide <span class="highlight">Values</span>.'],
     typeSpeed: 50,
 });
