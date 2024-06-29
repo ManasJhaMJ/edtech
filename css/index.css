@@ -305,6 +305,7 @@ nav.scrolled a:hover {
 
 .card-text {
     padding: 1rem 2rem;
+    width: 85%;
 }
 
 .card-text h1 {

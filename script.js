@@ -20,6 +20,6 @@ function closeNav() {
 
 // typed.js
 var typed = new Typed('#typed', {
-    strings: ['', 'We dont sell Courses. <br>We provide <span class="highlight">Values</span>.'],
+    strings: ['', 'We dont sell Courses, <br>We provide <span class="highlight">Values</span>.'],
     typeSpeed: 50,
 });
